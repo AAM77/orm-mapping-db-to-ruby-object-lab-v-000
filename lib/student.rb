@@ -79,7 +79,6 @@ class Student
     SQL
     
     DB[:conn].execute(sql).map {|row| self.new_from_db(row)}.first
-    end.first #map |row|
   end #first_student_in_grade_10
   
   
